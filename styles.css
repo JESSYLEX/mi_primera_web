@@ -1,0 +1,223 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;}
+
+body {    background-color: rgb(9, 6, 190);}
+
+/* ESTILOS GENERALES */
+
+.fuente-clara { color: #000000;}
+
+.fuente-oscura { color: #ddd7f5;}
+
+.fuente-acento {color: rgb(253, 253, 253);
+text-align: center;}
+
+.parrafo1 { text-align: center;}
+
+a:hover { background-color: #e249a8;}
+
+a:active {background-color: chartreuse;}
+
+h3 {color: rgb(247, 247, 247);}
+
+/* ENCABEZADO */
+
+header { background-color: rgb(177, 22, 61);
+width: 100%;
+padding: 20px;
+}
+
+header h1 {padding: 20px;
+display: inline-block;
+}
+
+header nav{
+  float: right;
+}
+nav ul.menu li { 
+display: inline-block;
+margin-right: 20px;
+line-height: 80px;
+
+}
+
+
+nav a {color: rgb(156, 252, 252);}
+
+/* centro */
+
+#seccion-principal /* sobre mi */
+ { width: 100%;
+  background-color: rgb(173, 100, 119);
+  display: flex;
+}
+
+.seccion-1 img 
+{ width: 15%; 
+flex: 1;
+float: right;
+}
+
+#seccion-principal .seccion-1 
+{ padding: 20px;}
+
+.seccion-1 .parrafo2 
+{padding: 20px 0px;
+  float: left;
+ 
+
+  
+}
+ 
+#seccion-secundaria /* trabajos */
+ { width: 100%;
+  background-color: rgb(172, 62, 90) ;
+  display: flex;
+}
+.seccion-2 img { width: 30%;
+ }
+
+#seccion-secundaria .button { color: #000000;
+  background-color: rgb(39, 197, 123);
+  font-weight: bold;
+  width: 15%;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid rgb(22, 22, 21) ;
+  border-radius: 5px;
+  cursor: pointer;
+  }
+
+
+
+#seccion-tercera /* aventuras */
+ { width: 100%;
+  background-color:  rgb(173, 100, 119);
+  
+}
+.seccion-3 img { width: 50%;
+border-radius: 70PX 10PX;}
+
+#seccion-tercera .button { color: #000000;
+background-color: rgb(197, 197, 39);
+font-weight: bold;
+width: 50%;
+padding: 20px;
+text-align: center;
+border: 2px solid rgb(22, 22, 21) ;
+border-radius: 5px;
+cursor: pointer;}
+
+/* FOOTER */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer { clear: both
+;background-color: rgb(177, 22, 61);
+width: 100%;
+padding: 20px;
+text-align: center;}
+
+footer a {text-decoration: none;}
+
+nav ul.contacto li a{ color:#ffffff}
+
+/* MENU */
+
+#chek { display: none;}
+
+.checkbtm {
+  font-size: 25px;
+  color: aliceblue;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+
+}
+@media (max-width: 768px){
+
+header { background-color: burlywood}
+
+.acerca-de { text-align: center;}
+
+.acerca-imagen { margin-bottom: 40px;}
+
+h2.fuente-acento{ text-align: center;}
+
+.checkbtm {display: block;}
+
+#encabezado ul { 
+  position: fixed;
+width: 100%;
+height: 100vh;
+background: #000000;
+top: 80px;
+left: 100%;
+text-align: center;
+transition: all 0.5s;}
+
+#check:checked ~ ul {left: 0;
+display: block;}
+
+#encabezado nav ul li {
+  display: block;
+  margin: 50px 0;
+  line-height: 30px;
+}
+
+#encabezado nav ul li a {
+  font-size: 20px;
+}
+
+#check:checked ~ .checkbtn { color:aqua }
+}
